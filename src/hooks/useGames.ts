@@ -13,6 +13,7 @@ export interface Game {
     name: string;
     background_image: string;
     parent_platforms: { platform: Platform }[];
+    metacritic: number;
 };
 
 interface FetchGamesResponse {
@@ -28,7 +29,7 @@ const useGames = () => {
         const controller = new AbortController();
 
         apiClient
-            .get<FetchGamesResponse>("/games", { signal: controller.signal  })
+            .get<FetchGamesResponse>("/games", { signal: controller.signal })
             .then((response) => setGames(response.data.results))
             .catch((error) => {
                 if (error instanceof CanceledError) return;
