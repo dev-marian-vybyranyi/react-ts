@@ -23,7 +23,7 @@ const SortSelector = (props: SortSelectorProps) => {
   return (
     <Menu.Root>
       <Menu.Trigger asChild>
-        <Button variant="ghost">
+        <Button variant="subtle">
           <BsChevronDown />
           Sort By {selectedSortOrder?.label || "Relevance"}
         </Button>

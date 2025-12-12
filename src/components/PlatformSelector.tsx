@@ -16,7 +16,7 @@ const PlatformSelector = (props: PlatformSelectorProps) => {
   return (
     <Menu.Root>
       <Menu.Trigger asChild>
-        <Button variant="ghost">
+        <Button variant="subtle">
           <BsChevronDown />
           {props.selectedPlatform?.name || "Platform"}
         </Button>
