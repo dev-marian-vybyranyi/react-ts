@@ -13,7 +13,7 @@ const ColorModeSwitch = () => {
       >
         <Switch.HiddenInput />
         <Switch.Control />
-        <Switch.Label>Light Mode</Switch.Label>
+        <Switch.Label whiteSpace="nowrap">Light Mode</Switch.Label>
       </Switch.Root>
     </HStack>
   );
