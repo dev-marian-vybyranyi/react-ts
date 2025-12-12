@@ -36,7 +36,7 @@ const GenreList = (props: GenreListProps) => {
                 genre.id === props.selectegGenre?.id ? "bold" : "normal"
               }
               fontSize="lg"
-              variant="plain"
+              variant="ghost"
             >
               {genre.name}
             </Button>
