@@ -27,7 +27,7 @@ const GenreList = (props: GenreListProps) => {
         Geners
       </Heading>
       <List.Root listStyle="none">
-        {data.map((genre) => (
+        {data?.results.map((genre) => (
           <ListItem key={genre.id}>
             <HStack>
               <Image
