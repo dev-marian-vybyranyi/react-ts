@@ -13,6 +13,7 @@ const SearchInput = () => {
         event.preventDefault();
         if (ref.current) setSearchText(ref.current.value);
       }}
+      style={{ width: "100%" }}
     >
       <InputGroup startElement={<BsSearch />}>
         <Input
