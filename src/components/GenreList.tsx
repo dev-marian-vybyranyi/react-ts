@@ -12,7 +12,7 @@ import {
 
 interface GenreListProps {
   onselectGenre: (genre: Genre) => void;
-  selectegGenre: Genre | null;
+  selectegGenreId?: number;
 }
 
 const GenreList = (props: GenreListProps) => {
@@ -41,7 +41,7 @@ const GenreList = (props: GenreListProps) => {
                 whiteSpace="normal"
                 textAlign="left"
                 fontWeight={
-                  genre.id === props.selectegGenre?.id ? "bold" : "normal"
+                  genre.id === props.selectegGenreId ? "bold" : "normal"
                 }
                 fontSize="md"
                 variant="ghost"
