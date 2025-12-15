@@ -5,7 +5,7 @@ import { BsChevronDown } from "react-icons/bs";
 
 interface PlatformSelectorProps {
   onSelectPlatform: (platform: Platform) => void;
-  selectedPlatform: Platform | null; 
+  selectedPlatform: Platform | null;
 }
 
 const PlatformSelector = (props: PlatformSelectorProps) => {
@@ -24,7 +24,7 @@ const PlatformSelector = (props: PlatformSelectorProps) => {
       <Portal>
         <Menu.Positioner>
           <Menu.Content>
-            {data.map((platform) => (
+            {data?.results.map((platform) => (
               <Menu.Item
                 onClick={() => props.onSelectPlatform(platform)}
                 key={platform.id}
